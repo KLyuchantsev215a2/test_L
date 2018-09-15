@@ -13,8 +13,8 @@
 rho_0 =1;
 v_0 = 1;
 Time = 10;
-h=1;
-dt = 0.0001;
+
+dt = 0.001;
 mu = 20;             % модуль сдвига
 k = 50;              % к-т объёмного сжатия
 E=9*k*mu/(3*k+mu);   % модуль Юнга
@@ -23,6 +23,7 @@ N=sqn*sqn;
 S=sqn*sqn;
 %S=H*L;
 m=rho_0*S/N;
+h=(m/rho_0)^(1/2);
 fr=10;
     
     %coordinate(particle) initialization
