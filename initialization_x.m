@@ -5,7 +5,7 @@ function [init] =initialization_x(N,sqn) %initialization(L,H,N,flag)
 %N_x = fix( N / N_y);
 i=1;
 x=zeros(1,2,N);
- 
+
 for  yi=1:sqn
      for  xi=1:sqn
         x(1,1,i) =xi;
@@ -13,4 +13,5 @@ for  yi=1:sqn
         i=i+1;
     end
 end
+
 init=x;
